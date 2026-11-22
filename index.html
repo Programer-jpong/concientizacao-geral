@@ -5,20 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Conscientização Geral | Descarte Correto</title>
-
-    <meta name="description" content="Aprenda a descartar pilhas e baterias corretamente. Informação acessível para todos.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#123D2B">
+    <meta name="description" content="Conscientização Geral: conhecimento gratuito, acessível e confiável sobre meio ambiente, sociedade, saúde e assuntos que fazem diferença na vida das pessoas.">
+    <title>Conscientização Geral | Conhecimento que transforma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -36,7 +29,7 @@
 
             <span class="marca-textos">
                 <strong>Conscientização Geral</strong>
-                <small>Educação ambiental para todos</small>
+                <small>Conhecimento acessível para todos</small>
             </span>
         </a>
 
@@ -92,163 +85,278 @@
         <!-- PÁGINA INICIAL -->
        
 <section id="inicio" class="inicio-cinematografico">
-
-    <!-- Paisagens de fundo -->
+    <!-- Abertura: mantemos as paisagens e o controle de animação originais. -->
     <div class="paisagens" aria-hidden="true">
         <div class="paisagem ativa"></div>
         <div class="paisagem"></div>
         <div class="paisagem"></div>
     </div>
-
     <div class="inicio-sombra" aria-hidden="true"></div>
 
     <div class="inicio-conteudo">
+        <div class="hero-layout">
+            <div class="hero-apresentacao">
+                <div class="hero-identidade">
+                    <span class="hero-linha" aria-hidden="true"></span>
+                    <span>CONSCIÊNCIA QUE TRANSFORMA</span>
+                    <span class="hero-linha" aria-hidden="true"></span>
+                </div>
+                <h1 class="hero-titulo">
+                    O mundo muda quando
+                    <span class="hero-frase-destaque">a consciência desperta.</span>
+                </h1>
+                <p class="inicio-descricao hero-descricao">Questione. Descubra. Transforme.</p>
+                <div class="hero-detalhe" aria-hidden="true"><span></span><span class="hero-folha">✦</span><span></span></div>
+                
+<a class="botao-explorar" href="#sobre">
+    Conheça o projeto
+    <span aria-hidden="true">↓</span>
+</a>
 
-    <div class="hero-layout">
-
-<div class="hero-apresentacao">
-
-    <div class="hero-identidade">
-        <span class="hero-linha"></span>
-        <span>CONSCIÊNCIA QUE TRANSFORMA</span>
-        <span class="hero-linha"></span>
+            </div>
+        </div>
+        <div class="controle-paisagens">
+            <button type="button" id="alternarPaisagens" aria-pressed="false">⏸ Pausar paisagens</button>
+        </div>
     </div>
 
-    <h1 class="hero-titulo">
-        O futuro do
-        <span class="hero-palavra-principal">planeta</span>
+<div class="portal-conteudo">
 
-        <span class="hero-frase-destaque">
-            está nas nossas mãos.
+    
+<section class="portal-sobre" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="sobre-editorial">
+        <div class="sobre-editorial-conteudo">
+            <span class="sobre-editorial-etiqueta">CONHEÇA O CONSCIENTIZAÇÃO GERAL</span>
+            <h2 id="sobre-titulo">Seja muito bem-vindo ao Conscientização Geral!</h2>
+
+            <p>
+            Este é um projeto desenvolvido com o objetivo
+            de trazer informações sobre os mais variados
+            assuntos, de forma gratuita, para qualquer
+            pessoa que queira aprender.
+            </p>
+
+            <p>
+            Ao criar este site, procurei pensar ao máximo
+            na acessibilidade e na simplicidade do
+            aprendizado, para que diferentes pessoas
+            possam aproveitar os conteúdos da maneira
+            que acharem melhor.
+            </p>
+
+            <p>
+            Mais à frente, você poderá escolher a forma
+            que prefere aprender. Afinal, nem todo mundo
+            aprende do mesmo jeito!
+            </p>
+
+            <p>
+            Fique à vontade para explorar os assuntos
+            disponíveis, conhecer coisas novas e aproveitar
+            o que o site tem a oferecer.
+            </p>
+
+            <p class="sobre-agradecimento">
+            Muito obrigado por acessar o
+            Conscientização Geral! :)
+            </p>
+        </div>
+
+<div class="sobre-editorial-visual">
+    <figure class="sobre-imagem-principal">
+        <img
+            src="imagens/ilustracao-conhecimento.webp"
+            alt="Ilustração de um livro aberto com um planeta e elementos que representam diferentes áreas do conhecimento."
+            loading="lazy"
+            decoding="async"
+        >
+    </figure>
+</div>
+
+</div><!-- /.sobre-editorial -->
+
+<div class="sobre-principios">
+    <div class="sobre-principio">
+        <span class="sobre-principio-icone" aria-hidden="true">✦</span>
+        <h3>Conhecimento</h3>
+        <p>Informação clara, aprofundada e fundamentada.</p>
+    </div>
+
+    <div class="sobre-principio">
+        <span class="sobre-principio-icone" aria-hidden="true">◎</span>
+        <h3>Acessibilidade</h3>
+        <p>Diferentes maneiras de explorar e aprender.</p>
+    </div>
+
+    <div class="sobre-principio">
+        <span class="sobre-principio-icone" aria-hidden="true">♡</span>
+        <h3>Gratuidade</h3>
+        <p>Conhecimento aberto, sem barreiras financeiras.</p>
+    </div>
+</div>
+
+<!-- CONVITE PARA CONTINUAR EXPLORANDO -->
+
+<a href="#explorar" class="sobre-continuar">
+    <span>CONTINUE EXPLORANDO</span>
+</a>
+
+</section><!-- /.portal-sobre -->
+       
+<section class="portal-explorar" id="explorar"
+         aria-labelledby="explorar-titulo">
+
+    <div class="explorar-cabecalho">
+
+        <span class="portal-etiqueta">
+            DESCUBRA E APRENDA
         </span>
-    </h1>
 
-    <p class="inicio-descricao hero-descricao">
-        A natureza precisa de escolhas conscientes.
-        Descubra como o descarte correto de pilhas e baterias
-        pode contribuir para um mundo mais saudável.
+        <h2 id="explorar-titulo">
+            O que você gostaria de aprender hoje?
+        </h2>
+
+        <p>
+    Escolha um assunto e comece a aprender!
+    Aqui você encontra conteúdos variados,
+    que podem ser explorados de forma simples
+    ou aprofundada, como preferir.
+
+        </p>
+
+    </div>
+
+    <div class="explorar-ferramentas">
+
+<label for="buscaAssuntos" class="busca-rotulo">
+    ENCONTRE SEU PRÓXIMO ASSUNTO
+</label>
+
+<div class="busca-campo">
+    
+<span class="busca-icone" aria-hidden="true">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+    </svg>
+</span>
+
+
+    <input
+        id="buscaAssuntos"
+        class="busca-assuntos"
+        type="search"
+        placeholder="Pesquise algo que desperte sua curiosidade..."
+        autocomplete="off"
+    >
+</div>
+
+
+        <div class="filtros-assuntos"
+             role="group"
+             aria-label="Filtrar assuntos por área">
+
+            <button type="button"
+                    class="filtro-assunto ativo"
+                    data-categoria="todos"
+                    aria-pressed="true">
+                Todos
+            </button>
+
+            <button type="button"
+                    class="filtro-assunto"
+                    data-categoria="ambiente"
+                    aria-pressed="false">
+                Meio ambiente
+            </button>
+
+            <button type="button"
+                    class="filtro-assunto"
+                    data-categoria="sociedade"
+                    aria-pressed="false">
+                Sociedade
+            </button>
+
+            <button type="button"
+                    class="filtro-assunto"
+                    data-categoria="saude"
+                    aria-pressed="false">
+                Saúde
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="listaAssuntos" class="lista-assuntos" aria-live="polite"></div>
+
+    <p id="mensagemBusca"
+       class="mensagem-busca"
+       role="status"
+       hidden>
+        Nenhum assunto publicado corresponde à busca.
+        Estamos preparando novos conteúdos.
     </p>
 
-    <div class="hero-detalhe" aria-hidden="true">
-        <span></span>
-        <span class="hero-folha">✦</span>
-        <span></span>
-    </div>
+    <p class="portal-aviso">
+        Nosso catálogo está crescendo!
+        Novos assuntos e formas de aprender
+        serão adicionados gradualmente.
+    </p>
 
-</div>
-
-       <div class="hero-escolhas">
-
-        <h2>Como você prefere aprender?</h2>
-
-      
-<div class="cards cards-premium">
-
-    <!-- CARD LEITURA COMPLETA -->
-    <article class="card card-premium">
-
-        <div class="card-imagem card-imagem-completa"
-             aria-hidden="true">
-
-            <span class="card-numero">01</span>
-
-            <span class="card-simbolo">📖</span>
-
-        </div>
-
-        <div class="card-conteudo">
-
-            <span class="card-categoria">
-                CONHECIMENTO APROFUNDADO
-            </span>
-
-            <h3>Leitura completa</h3>
-
-            <p>
-                Entenda a ciência por trás das pilhas
-                e baterias, os impactos ambientais,
-                a legislação e as melhores formas
-                de descarte.
-            </p>
-
-            <div class="card-recursos">
-                <span>✓ Conteúdo detalhado</span>
-                <span>✓ Informações educativas</span>
-            </div>
-
-            <button type="button" id="btnCompleto">
-                Explorar conteúdo
-                <span aria-hidden="true">→</span>
-            </button>
-
-        </div>
-
-    </article>
-
-    <!-- CARD LEITURA VISUAL -->
-    <article class="card card-premium">
-
-        <div class="card-imagem card-imagem-visual"
-             aria-hidden="true">
-
-            <span class="card-numero">02</span>
-
-            <span class="card-simbolo">🎨</span>
-
-        </div>
-
-        <div class="card-conteudo">
-
-            <span class="card-categoria">
-                APRENDIZAGEM ILUSTRADA
-            </span>
-
-            <h3>Leitura visual</h3>
-
-            <p>
-                Descubra o descarte correto com
-                histórias ilustradas, personagens
-                e explicações simples para aprender
-                de maneira divertida.
-            </p>
-
-            <div class="card-recursos">
-                <span>✓ Histórias ilustradas</span>
-                <span>✓ Leitura simplificada</span>
-            </div>
-
-            <button type="button" id="btnVisual">
-                Explorar histórias
-                <span aria-hidden="true">→</span>
-            </button>
-
-        </div>
-
-    </article>
-
-</div>
-
-        <div class="controle-paisagens">
-            <button type="button"
-                    id="alternarPaisagens"
-                    aria-pressed="false">
-                ⏸ Pausar paisagens
-            </button>
-        </div>
-
-    </div>
-
-    </div>
-
-    <div>
-
-        <div class="controle-paisagens">
 </section>
 
-        <!-- MODALIDADE DE LEITURA COMPLETA -->
+
+        <section class="portal-modalidades" id="escolherModalidade" aria-labelledby="modalidades-titulo" hidden>
+            <span class="portal-etiqueta">ASSUNTO SELECIONADO</span>
+            <h2 id="modalidades-titulo">Descarte de pilhas e baterias</h2>
+            <p>Como você prefere aprender sobre este assunto?</p>
+            <div class="modalidades-opcoes">
+                <article class="modalidade-opcao">
+                    <span aria-hidden="true">📖</span>
+                    <h3>Leitura completa</h3>
+                    <p>Explicações detalhadas, referências e atividades.</p>
+                    <button type="button" id="btnCompleto">Começar leitura <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="modalidade-opcao">
+                    <span aria-hidden="true">🎨</span>
+                    <h3>Leitura visual</h3>
+                    <p>Histórias ilustradas e explicações mais curtas.</p>
+                    <button type="button" id="btnVisual">Ver histórias <span aria-hidden="true">→</span></button>
+                </article>
+            </div>
+            <button type="button" id="voltarCatalogo" class="voltar-catalogo">← Voltar ao catálogo</button>
+        </section>
+    </div>
+</section>
+
+<!-- MODALIDADE DE LEITURA COMPLETA -->
        <section id="leituraCompleta" hidden>
 
-    <h2>Aprenda sobre o descarte correto</h2>
+   <div class="leitura-apresentacao">
+
+    <span class="leitura-etiqueta">
+        EDUCAÇÃO AMBIENTAL • GUIA COMPLETO
+    </span>
+
+    <h2>Entenda o impacto das suas escolhas.</h2>
+
+    <p class="leitura-subtitulo">
+        Um guia para compreender o funcionamento,
+        os impactos ambientais e o descarte responsável
+        de pilhas e baterias.
+    </p>
+
+</div>
 
     <p>
         As pilhas e baterias fazem parte do nosso cotidiano.
@@ -911,7 +1019,7 @@
     
 <footer>
 
-    <h3>Fontes e referências</h3>
+    <h3>Fontes e referências do conteúdo publicado</h3>
 
     <p>Consulte as instituições e normas utilizadas na elaboração deste conteúdo:</p>
 
@@ -948,7 +1056,7 @@
     </ul>
 
     <p>Conscientização Geral © 2026</p>
-    <p>Pequenas atitudes, grandes mudanças.</p>
+    <p>Questione. Descubra. Transforme.</p>
 
 </footer>
 

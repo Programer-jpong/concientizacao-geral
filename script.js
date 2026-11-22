@@ -48,6 +48,8 @@ function voltarInicio() {
     leituraCompleta.hidden = true;
     leituraVisual.hidden = true;
     inicio.hidden = false;
+    document.getElementById("escolherModalidade").hidden = true;
+    document.getElementById("explorar").hidden = false;
 
     window.speechSynthesis.cancel();
 
@@ -103,21 +105,32 @@ function diminuirTexto() {
 aumentarFonte.addEventListener("click", aumentarTexto);
 
 diminuirFonte.addEventListener("click", diminuirTexto);
-// Identificando o botão de contraste
+
+/* =========================================
+   CONTROLE DE ALTO CONTRASTE
+   ========================================= */
 
 const botaoContraste = document.getElementById("contraste");
 
-// Função para ativar ou desativar o contraste
+// Inicia no modo comum
+document.body.classList.remove("alto-contraste");
 
-function alternarContraste() {
+if (botaoContraste) {
 
-    document.body.classList.toggle("alto-contraste");
+    botaoContraste.setAttribute("aria-pressed", "false");
+
+    botaoContraste.addEventListener("click", function () {
+
+        const ativado = document.body.classList.toggle("alto-contraste");
+
+        botaoContraste.setAttribute(
+            "aria-pressed",
+            String(ativado)
+        );
+
+    });
 
 }
-
-// Evento do botão
-
-botaoContraste.addEventListener("click", alternarContraste);
 
 // Identificando os botões de áudio
 
@@ -309,17 +322,22 @@ linksIndice.forEach(function(link) {
    NAVEGAÇÃO ACESSÍVEL
 ========================================= */
 
+
 function navegarPara(secao) {
 
     window.speechSynthesis.cancel();
 
-    window.scrollTo({
-        top: 0,
-        behavior: "instant"
+    secao.setAttribute("tabindex", "-1");
+
+    secao.scrollIntoView({
+        behavior: "instant",
+        block: "start"
     });
 
-    secao.setAttribute("tabindex", "-1");
-    secao.focus({ preventScroll: true });
+    secao.focus({
+        preventScroll: true
+    });
+
 }
 
 
@@ -778,3 +796,185 @@ document.addEventListener("keydown", evento => {
         }
     }
 });
+
+
+/* =========================================
+   PORTAL DE ASSUNTOS — NAVEGAÇÃO INICIAL
+   Adicione novos assuntos ao catálogo conforme forem publicados.
+========================================= */
+const escolherModalidade = document.getElementById("escolherModalidade");
+const voltarCatalogo = document.getElementById("voltarCatalogo");
+const campoBusca = document.getElementById("buscaAssuntos");
+const filtrosAssuntos = [...document.querySelectorAll(".filtro-assunto")];
+let assuntosPublicados = [];
+const mensagemBusca = document.getElementById("mensagemBusca");
+let categoriaSelecionada = "todos";
+
+function filtrarAssuntos() {
+    const termo = campoBusca.value.trim().toLocaleLowerCase("pt-BR");
+    let encontrados = 0;
+    assuntosPublicados.forEach(assunto => {
+        const correspondeCategoria = categoriaSelecionada === "todos" ||
+            assunto.dataset.categoria === categoriaSelecionada;
+        const correspondeBusca = (assunto.dataset.busca + " " + assunto.textContent)
+            .toLocaleLowerCase("pt-BR").includes(termo);
+        assunto.hidden = !(correspondeCategoria && correspondeBusca);
+        if (!assunto.hidden) encontrados++;
+    });
+    mensagemBusca.hidden = encontrados > 0;
+}
+
+campoBusca.addEventListener("input", filtrarAssuntos);
+filtrosAssuntos.forEach(botao => {
+    botao.addEventListener("click", () => {
+        categoriaSelecionada = botao.dataset.categoria;
+        filtrosAssuntos.forEach(item => {
+            const ativo = item === botao;
+            item.classList.toggle("ativo", ativo);
+            item.setAttribute("aria-pressed", String(ativo));
+        });
+        filtrarAssuntos();
+    });
+});
+
+
+/* ABERTURA DOS ASSUNTOS DO CATÁLOGO */
+
+const listaAssuntos = document.getElementById("listaAssuntos");
+
+listaAssuntos.addEventListener("click", function(evento) {
+
+    const botao = evento.target.closest(".assunto-abrir");
+
+    if (!botao || !listaAssuntos.contains(botao)) {
+        return;
+    }
+
+    const assuntoSelecionado = botao.dataset.assunto;
+
+    if (assuntoSelecionado === "pilhas") {
+
+        document.getElementById("explorar").hidden = true;
+
+        escolherModalidade.hidden = false;
+
+        navegarPara(escolherModalidade);
+    }
+if (assuntoSelecionado === "machismo") {
+    window.location.href = "assuntos/machismo.html";
+    return;
+}
+});
+
+
+/* VOLTAR AO CATÁLOGO */
+
+voltarCatalogo.addEventListener("click", function() {
+
+    escolherModalidade.hidden = true;
+
+    document.getElementById("explorar").hidden = false;
+
+    navegarPara(document.getElementById("explorar"));
+
+});
+
+/* =========================================
+   CATÁLOGO DE CONHECIMENTOS
+========================================= */
+
+
+const catalogoAssuntos = [
+
+    {
+        id: "pilhas",
+        titulo: "Descarte de pilhas e baterias",
+        categoria: "ambiente",
+        descricao: "Entenda os impactos ambientais, os cuidados necessários e as formas corretas de descarte.",
+        palavrasChave: [
+            "pilhas",
+            "baterias",
+            "reciclagem",
+            "descarte",
+            "meio ambiente"
+        ],
+        disponivel: true
+    },
+
+    {
+        id: "machismo",
+        titulo: "Machismo e desigualdade de gênero",
+        categoria: "sociedade",
+        descricao: "Compreenda o machismo, suas manifestações, origens históricas e consequências sociais.",
+        palavrasChave: [
+            "machismo",
+            "mulheres",
+            "igualdade",
+            "desigualdade de gênero",
+            "violência contra a mulher",
+            "sociedade",
+            "direitos"
+        ],
+        disponivel: true
+    }
+
+];
+
+
+console.log("Catálogo carregado:", catalogoAssuntos);
+
+console.log("Primeiro assunto:", catalogoAssuntos[0].titulo);
+
+function criarCatalogo() {
+
+    const lista = document.getElementById("listaAssuntos");
+
+    lista.innerHTML = "";
+
+    catalogoAssuntos.forEach(assunto => {
+// Não exibir assuntos que ainda estão em desenvolvimento
+if (!assunto.disponivel) {
+    return;
+}
+        const artigo = document.createElement("article");
+
+        artigo.className = "assunto-item";
+
+        artigo.dataset.categoria = assunto.categoria;
+
+        artigo.dataset.busca = assunto.palavrasChave.join(" ");
+
+        artigo.innerHTML = `
+            <div class="assunto-info">
+
+                <span class="assunto-area">
+                    ${assunto.categoria.toUpperCase()} · DISPONÍVEL
+                </span>
+
+                <h3>${assunto.titulo}</h3>
+
+                <p>${assunto.descricao}</p>
+
+            </div>
+
+            <button type="button"
+                    class="assunto-abrir"
+                    data-assunto="${assunto.id}">
+                Explorar assunto →
+            </button>
+        `;
+
+        lista.appendChild(artigo);
+
+    });
+
+    // Atualizar os assuntos disponíveis para pesquisa
+    assuntosPublicados = [
+        ...document.querySelectorAll(".assunto-item")
+    ];
+
+    // Aplicar os filtros existentes
+    filtrarAssuntos();
+
+}
+criarCatalogo();
