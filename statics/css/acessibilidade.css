@@ -1,0 +1,110 @@
+/* ACESSIBILIDADE COMPARTILHADA */
+
+.cabecalho-assunto .acessibilidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+.acessibilidade button {
+  min-height: 44px;
+  font-size: 0.85rem;
+}
+
+.acessibilidade button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* TAMANHO DO TEXTO */
+
+main {
+  font-size: 1.125rem;
+}
+
+.leitura-artigo p,
+.introducao-assunto p {
+  font-size: 1.1rem;
+}
+
+.machismo-dado p {
+  font-size: 0.95rem;
+}
+
+.machismo-dado small {
+  font-size: 0.8rem;
+}
+
+/* ALTO CONTRASTE */
+
+body.alto-contraste main,
+body.alto-contraste main section,
+body.alto-contraste .modalidade-card,
+body.alto-contraste .modalidade-icone,
+body.alto-contraste .indice-machismo,
+body.alto-contraste .indice-lista a,
+body.alto-contraste .voltar-modalidades {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+
+body.alto-contraste main h1,
+body.alto-contraste main h2,
+body.alto-contraste main h3,
+body.alto-contraste main h4 {
+  color: #ffff00 !important;
+}
+
+body.alto-contraste main p,
+body.alto-contraste main span,
+body.alto-contraste main small,
+body.alto-contraste main strong {
+  color: #fff !important;
+}
+
+body.alto-contraste main a,
+body.alto-contraste .logo-assunto,
+body.alto-contraste .voltar-portal {
+  color: #ffff00 !important;
+}
+
+body.alto-contraste .acessibilidade button {
+  background: #000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.alto-contraste #contraste[aria-pressed="true"] {
+  background: #ffff00 !important;
+  color: #000 !important;
+}
+
+body.alto-contraste :focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 4px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+  .cabecalho-assunto .acessibilidade button {
+    flex: 1 1 auto;
+  }
+
+  .cabecalho-assunto {
+    position: static;
+  }
+}
+.cabecalho-assunto .acessibilidade {
+  width: auto;
+}
+
+@media (max-width: 1100px) {
+  .cabecalho-assunto .acessibilidade {
+    width: 100%;
+  }
+}

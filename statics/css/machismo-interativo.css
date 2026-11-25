@@ -1,0 +1,178 @@
+/* Estilos exclusivos da aprendizagem interativa */
+.interativo-machismo[hidden] {
+  display: none !important;
+}
+.interativo-machismo {
+  background: #f4f8f1;
+  padding: 85px 7%;
+  color: #26352b;
+}
+.interativo-container {
+  max-width: 900px;
+  margin: auto;
+}
+.interativo-etiqueta {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #287a4d;
+}
+.interativo-container > h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+  color: #123d2b;
+  margin: 12px 0 18px;
+}
+.interativo-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 730px;
+}
+.interativo-progresso {
+  margin: 32px 0;
+  font-weight: 700;
+}
+.interativo-trilho {
+  height: 9px;
+  background: #dce8db;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+#interativoBarra {
+  width: 0;
+  height: 100%;
+  background: #287a4d;
+  transition: width 0.25s;
+}
+.interativo-questao {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #d8e6d8;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px #123d2b0b;
+}
+.interativo-questao h3 {
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  color: #123d2b;
+  line-height: 1.4;
+}
+.interativo-questao p {
+  margin: 14px 0 22px;
+}
+.interativo-opcoes {
+  display: grid;
+  gap: 12px;
+}
+.interativo-opcao {
+  font: inherit;
+  text-align: left;
+  border: 2px solid #d9e7d8;
+  border-radius: 12px;
+  background: #f8fbf7;
+  color: #26352b;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+.interativo-opcao:hover:not(:disabled) {
+  background: #e8f4e5;
+  border-color: #287a4d;
+}
+.interativo-opcao.correta {
+  border-color: #287a4d;
+  background: #dff4df;
+  color: #153b26;
+}
+.interativo-opcao.incorreta {
+  border-color: #b34a44;
+  background: #fff0ee;
+  color: #63241f;
+}
+.interativo-feedback {
+  padding: 20px 24px;
+  margin: 20px 0;
+  background: #e8f2e6;
+  border-left: 5px solid #287a4d;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+.interativo-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+.interativo-acoes .botao-modalidade {
+  margin: 0;
+}
+.interativo-acoes .botao-modalidade:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.interativo-secundario,
+.interativo-voltar {
+  font: inherit;
+  font-weight: 700;
+  padding: 14px 20px;
+  border: 1px solid #a9c7ac;
+  background: #fff;
+  color: #123d2b;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.interativo-conclusao {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #d8e6d8;
+  margin: 24px 0;
+}
+.interativo-conclusao h3 {
+  color: #123d2b;
+}
+.interativo-voltar {
+  margin-top: 14px;
+}
+.interativo-machismo button:focus-visible {
+  outline: 3px solid #165f3b;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .interativo-machismo {
+    padding: 55px 5%;
+  }
+  .interativo-questao {
+    padding: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #interativoBarra {
+    transition: none;
+  }
+}
+body.alto-contraste .interativo-machismo,
+body.alto-contraste .interativo-questao,
+body.alto-contraste .interativo-conclusao,
+body.alto-contraste .interativo-feedback {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+body.alto-contraste .interativo-machismo h2,
+body.alto-contraste .interativo-machismo h3,
+body.alto-contraste .interativo-machismo p {
+  color: #fff !important;
+}
+body.alto-contraste .interativo-opcao,
+body.alto-contraste .interativo-secundario,
+body.alto-contraste .interativo-voltar {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+body.alto-contraste .interativo-opcao.correta {
+  border-color: #80ff80 !important;
+}
+body.alto-contraste .interativo-opcao.incorreta {
+  border-color: #ff8585 !important;
+}

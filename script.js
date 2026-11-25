@@ -864,6 +864,10 @@ if (assuntoSelecionado === "machismo") {
     window.location.href = "assuntos/machismo.html";
     return;
 }
+if (assuntoSelecionado === "slam") {
+    window.location.href = "assuntos/slam.html";
+    return;
+}
 });
 
 
@@ -915,6 +919,15 @@ const catalogoAssuntos = [
             "sociedade",
             "direitos"
         ],
+        disponivel: true
+    },
+
+    {
+        id: "slam",
+        titulo: "Slam: a força da poesia falada",
+        categoria: "cultura",
+        descricao: "Descubra como funcionam as batalhas de poesia e sua importância para a expressão cultural.",
+        palavrasChave: ["slam", "poesia", "poesia falada", "cultura", "arte", "periferia", "batalha de poesia"],
         disponivel: true
     }
 

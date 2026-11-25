@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Conheça o Slam com leitura aprofundada e leitura visual acessível."
+    />
+    <title>Slam | Conscientização Geral</title>
+    <link rel="stylesheet" href="../statics/css/slam.css" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="slam-topo">
+      <a href="../index.html">🌱 Conscientização Geral</a
+      ><a href="../index.html#explorar">← Voltar ao catálogo</a>
+    </header>
+    <div class="slam-tools" aria-label="Ferramentas de acessibilidade">
+      <button id="aumentarFonte" type="button">A+ Aumentar fonte</button
+      ><button id="diminuirFonte" type="button">A− Diminuir fonte</button
+      ><button id="contraste" type="button" aria-pressed="false">
+        Alto contraste</button
+      ><button id="ouvirPagina" type="button">🔊 Ouvir conteúdo</button
+      ><button id="pararAudio" type="button">■ Parar áudio</button>
+    </div>
+    <main id="conteudo">
+      <div class="slam-hero">
+        <span>CULTURA · POESIA · EXPRESSÃO</span>
+        <h1>Slam: quando a poesia ganha voz</h1>
+        <p>
+          Descubra como palavras, ritmo e presença transformam espaços públicos
+          em encontros de arte e participação.
+        </p>
+      </div>
+      <section id="modalidades" class="modos" aria-labelledby="titulo-modos">
+        <span class="modos-etiqueta">ESCOLHA SEU CAMINHO</span>
+        <h2 id="titulo-modos">Como você deseja explorar este assunto?</h2>
+        <p>Escolha a maneira mais confortável para aprender.</p>
+        <div class="modo-grid">
+          <article class="modo-card">
+            <div class="modo-icone" aria-hidden="true">📖</div>
+            <h3>Leitura aprofundada</h3>
+            <p>
+              Explore a história do Slam, suas características, sua chegada ao
+              Brasil e seu papel na cultura.
+            </p>
+            <button class="acao" id="abrirCompleta" type="button">
+              Começar leitura
+            </button>
+          </article>
+          <article class="modo-card">
+            <div class="modo-icone" aria-hidden="true">🎨</div>
+            <h3>Leitura visual</h3>
+            <p>
+              Aprenda com cenas visuais, explicações curtas e narração em voz
+              alta, no seu próprio ritmo.
+            </p>
+            <button class="acao" id="abrirVisual" type="button">
+              Começar leitura visual
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="leituraCompleta" hidden aria-label="Leitura aprofundada">
+        <article class="slam-pagina">
+          <header class="slam-leitura-topo">
+            <span>CULTURA · LEITURA APROFUNDADA</span>
+
+            <h2>Muito além das palavras</h2>
+
+            <p>
+              Conheça a história da poesia falada, sua força como expressão
+              artística e seu papel na transformação da sociedade.
+            </p>
+          </header>
+
+          <!-- ÍNDICE -->
+
+          <nav class="slam-indice" aria-label="Índice do conteúdo">
+            <span class="indice-etiqueta">GUIA DE LEITURA</span>
+
+            <h2>Explore o conteúdo</h2>
+
+            <p>Escolha por onde deseja começar.</p>
+
+            <div class="slam-indice-grid">
+              <a href="#o-que-e">
+                <span>01 · CONCEITO</span>
+                <strong>O que é Slam?</strong>
+                <small>Conheça a poesia falada.</small>
+              </a>
+
+              <a href="#como-funciona">
+                <span>02 · REGRAS</span>
+                <strong>Como funciona?</strong>
+                <small>Entenda as batalhas de poesia.</small>
+              </a>
+
+              <a href="#origem">
+                <span>03 · HISTÓRIA</span>
+                <strong>As origens do movimento</strong>
+                <small>De Chicago para o mundo.</small>
+              </a>
+
+              <a href="#brasil">
+                <span>04 · CULTURA BRASILEIRA</span>
+                <strong>Slam no Brasil</strong>
+                <small>Conheça sua trajetória no país.</small>
+              </a>
+
+              <a href="#importancia">
+                <span>05 · SOCIEDADE</span>
+                <strong>Importância social</strong>
+                <small>A poesia como transformação.</small>
+              </a>
+
+              <a href="#diferencas">
+                <span>06 · EXPRESSÕES ARTÍSTICAS</span>
+                <strong>Slam, rap e rimas</strong>
+                <small>Entenda suas diferenças.</small>
+              </a>
+
+              <a href="#poesia">
+                <span>07 · LITERATURA</span>
+                <strong>A construção de um poema</strong>
+                <small>Conheça os recursos poéticos.</small>
+              </a>
+
+              <a href="#escola">
+                <span>08 · EDUCAÇÃO</span>
+                <strong>Slam na escola</strong>
+                <small>Aprendizado por meio da arte.</small>
+              </a>
+
+              <a href="#participar">
+                <span>09 · PARTICIPAÇÃO</span>
+                <strong>Sua voz também importa</strong>
+                <small>Descubra como participar.</small>
+              </a>
+
+              <a href="#fontes-slam">
+                <span>10 · PESQUISA</span>
+                <strong>Fontes e referências</strong>
+                <small>Aprofunde seus conhecimentos.</small>
+              </a>
+            </div>
+          </nav>
+
+          <div class="slam-conteudo">
+            <!-- CONCEITO -->
+
+            <section id="o-que-e">
+              <span class="slam-capitulo">CAPÍTULO 01</span>
+
+              <h2>O que é Slam?</h2>
+
+              <p class="slam-abertura">
+                O Slam, também conhecido como poetry slam, é uma manifestação
+                artística que reúne poesia, oralidade, interpretação e
+                participação coletiva.
+              </p>
+
+              <p>
+                Diferentemente da poesia destinada exclusivamente à leitura, o
+                Slam valoriza a apresentação diante de um público. A voz, os
+                gestos, as pausas e as expressões corporais ajudam a construir o
+                significado dos poemas.
+              </p>
+
+              <p>
+                Os participantes, conhecidos como slammers, apresentam textos de
+                sua própria autoria. Suas poesias podem abordar experiências
+                pessoais, sentimentos, identidade, relações humanas,
+                desigualdades, sonhos e diferentes aspectos da sociedade.
+              </p>
+
+              <p>
+                Embora geralmente organizado como uma competição, o Slam também
+                funciona como espaço de convivência, criatividade, escuta e
+                compartilhamento de experiências.
+              </p>
+
+              <figure class="slam-ilustracao">
+                <img
+                  src="../statics/img/slam/historia-01.png"
+                  alt="História ilustrada sobre uma jovem que descobre a poesia falada."
+                  loading="lazy"
+                />
+                <figcaption>
+                  A poesia pode ocupar ruas, praças, escolas e diferentes
+                  espaços culturais.
+                </figcaption>
+              </figure>
+
+              <div class="slam-destaque">
+                <strong>Para lembrar</strong>
+                <p>
+                  O Slam não exige que todas as poesias tenham rimas. O
+                  importante é a criação autoral e a maneira como o texto é
+                  apresentado e compartilhado.
+                </p>
+              </div>
+            </section>
+
+            <!-- FUNCIONAMENTO -->
+
+            <section id="como-funciona">
+              <span class="slam-capitulo">CAPÍTULO 02</span>
+
+              <h2>Como funciona uma batalha de Slam?</h2>
+
+              <p>
+                Uma batalha de Slam reúne poetas que apresentam suas criações
+                diante de uma plateia. Os regulamentos podem variar conforme o
+                evento, mas alguns princípios são comuns.
+              </p>
+
+              <div class="slam-regras">
+                <article>
+                  <span>01</span>
+                  <h3>Autoria</h3>
+                  <p>O poema deve ser criado pelo próprio participante.</p>
+                </article>
+
+                <article>
+                  <span>02</span>
+                  <h3>Tempo</h3>
+                  <p>
+                    Em muitos eventos, cada apresentação possui um limite de
+                    três minutos.
+                  </p>
+                </article>
+
+                <article>
+                  <span>03</span>
+                  <h3>Performance</h3>
+                  <p>
+                    A apresentação normalmente utiliza a voz e o corpo, sem
+                    acompanhamento musical ou adereços cênicos.
+                  </p>
+                </article>
+
+                <article>
+                  <span>04</span>
+                  <h3>Júri popular</h3>
+                  <p>
+                    Pessoas escolhidas entre a plateia atribuem notas às
+                    apresentações.
+                  </p>
+                </article>
+              </div>
+
+              <h3>O papel do público</h3>
+
+              <p>
+                A plateia não é apenas observadora. Suas reações, sua escuta e
+                sua participação contribuem para a atmosfera do encontro. Em
+                muitas batalhas, integrantes do próprio público são convidados a
+                avaliar os poemas.
+              </p>
+
+              <p>
+                A competição oferece uma estrutura para o evento, mas a
+                experiência cultural não se resume à vitória ou à pontuação.
+              </p>
+            </section>
+
+            <!-- HISTÓRIA -->
+
+            <section id="origem">
+              <span class="slam-capitulo">CAPÍTULO 03</span>
+
+              <h2>De onde surgiu o Slam?</h2>
+
+              <p>
+                A poesia oral existe há milhares de anos em diferentes culturas.
+                Entretanto, o formato competitivo contemporâneo conhecido como
+                poetry slam desenvolveu-se nos Estados Unidos durante a década
+                de 1980.
+              </p>
+
+              <p>
+                O poeta Marc Kelly Smith buscava tornar os encontros de poesia
+                mais dinâmicos e próximos do público, questionando a ideia de
+                que a literatura deveria estar restrita a determinados espaços
+                sociais.
+              </p>
+
+              <div class="slam-linha-tempo">
+                <article>
+                  <span>1984</span>
+                  <h3>As primeiras experiências</h3>
+                  <p>
+                    Marc Kelly Smith organiza encontros de poesia em Chicago.
+                  </p>
+                </article>
+
+                <article>
+                  <span>1986</span>
+                  <h3>O nascimento do Poetry Slam</h3>
+                  <p>
+                    O Green Mill, em Chicago, torna-se um importante marco do
+                    desenvolvimento das batalhas de poesia.
+                  </p>
+                </article>
+
+                <article>
+                  <span>Décadas seguintes</span>
+                  <h3>Expansão internacional</h3>
+                  <p>
+                    O formato se espalha por diferentes países, incorporando
+                    características culturais de cada comunidade.
+                  </p>
+                </article>
+
+                <article>
+                  <span>2008</span>
+                  <h3>O primeiro Slam brasileiro</h3>
+                  <p>
+                    Surge o ZAP! Slam, em São Paulo, inaugurando uma nova etapa
+                    da poesia falada no Brasil.
+                  </p>
+                </article>
+
+                <article>
+                  <span>2012</span>
+                  <h3>A poesia ocupa as ruas</h3>
+                  <p>
+                    O Slam da Guilhermina fortalece as batalhas em espaços
+                    públicos da Zona Leste de São Paulo.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <!-- BRASIL -->
+
+            <section id="brasil">
+              <span class="slam-capitulo">CAPÍTULO 04</span>
+
+              <h2>O Slam no Brasil</h2>
+
+              <p>
+                Em 2008, a artista e pesquisadora Roberta Estrela D’Alva,
+                juntamente com o coletivo Núcleo Bartolomeu de Depoimentos,
+                organizou o primeiro Slam brasileiro.
+              </p>
+
+              <p>
+                O evento recebeu o nome de ZAP! — Zona Autônoma da Palavra — e
+                tornou-se uma referência para a expansão do movimento no país.
+              </p>
+
+              <p>
+                A poesia falada encontrou no Brasil um ambiente de diálogo com a
+                cultura hip-hop, os saraus, a literatura periférica e diversas
+                tradições de expressão oral.
+              </p>
+
+              <h3>Conheça algumas referências</h3>
+
+              <div class="slam-referencias-culturais">
+                <article>
+                  <h3>Roberta Estrela D’Alva</h3>
+                  <p>
+                    Artista, poeta e pesquisadora pioneira na introdução do
+                    Poetry Slam no Brasil.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>ZAP! Slam</h3>
+                  <p>
+                    Primeira batalha brasileira, organizada em São Paulo no ano
+                    de 2008.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Slam da Guilhermina</h3>
+                  <p>
+                    Movimento iniciado em 2012, com forte presença nos espaços
+                    públicos da periferia paulistana.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Slam Resistência</h3>
+                  <p>
+                    Coletivo que relaciona poesia, participação cidadã e
+                    reflexão sobre questões sociais.
+                  </p>
+                </article>
+              </div>
+
+              <figure class="slam-ilustracao">
+                <img
+                  src="../statics/img/slam/historia-04.png"
+                  alt="História ilustrada sobre a origem e a expansão do Slam."
+                  loading="lazy"
+                />
+                <figcaption>
+                  Uma manifestação artística que atravessa fronteiras e encontra
+                  novas identidades.
+                </figcaption>
+              </figure>
+            </section>
+
+            <!-- IMPORTÂNCIA SOCIAL -->
+
+            <section id="importancia">
+              <span class="slam-capitulo">CAPÍTULO 05</span>
+
+              <h2>A importância cultural e social do Slam</h2>
+
+              <p>
+                O Slam contribui para ampliar o acesso à cultura e à produção
+                literária. Ao ocupar espaços públicos e comunitários, pode
+                aproximar a poesia de pessoas que não frequentam ambientes
+                culturais tradicionais.
+              </p>
+
+              <h3>Representatividade e identidade</h3>
+
+              <p>
+                A poesia autoral permite que pessoas compartilhem suas próprias
+                experiências, valorizando suas histórias, identidades,
+                comunidades e diferentes perspectivas sobre o mundo.
+              </p>
+
+              <h3>Conscientização social</h3>
+
+              <p>
+                Muitos poemas abordam questões como racismo, machismo,
+                desigualdade econômica, violência, preconceito e exclusão
+                social. Essas apresentações podem estimular debates e incentivar
+                a reflexão crítica.
+              </p>
+
+              <h3>Liberdade artística</h3>
+
+              <p>
+                O Slam também acolhe poemas sobre amor, humor, amizade,
+                natureza, memória, descobertas e sonhos. Não existe uma
+                obrigação de abordar questões políticas ou denunciar injustiças.
+              </p>
+
+              <h3>Escuta e respeito</h3>
+
+              <p>
+                Conhecer realidades diferentes da nossa pode favorecer a empatia
+                e a compreensão. Para isso, é fundamental respeitar quem
+                apresenta e valorizar a diversidade das experiências humanas.
+              </p>
+
+              <div class="slam-destaque">
+                <strong>Arte e transformação</strong>
+                <p>
+                  A poesia não resolve sozinha os problemas da sociedade, mas
+                  pode contribuir para dar visibilidade a experiências,
+                  questionar preconceitos e incentivar mudanças.
+                </p>
+              </div>
+            </section>
+
+            <!-- COMPARAÇÃO -->
+
+            <section id="diferencas">
+              <span class="slam-capitulo">CAPÍTULO 06</span>
+
+              <h2>Slam, rap e batalha de rimas</h2>
+
+              <p>
+                Essas manifestações compartilham elementos como criatividade,
+                expressão oral e cultura urbana, mas possuem características
+                próprias.
+              </p>
+
+              <div class="slam-comparacao">
+                <article>
+                  <span>POESIA FALADA</span>
+                  <h3>Slam</h3>
+                  <p>
+                    Apresentação de poemas autorais, geralmente preparados
+                    anteriormente e declamados sem acompanhamento musical.
+                  </p>
+                </article>
+
+                <article>
+                  <span>EXPRESSÃO MUSICAL</span>
+                  <h3>Rap</h3>
+                  <p>
+                    Manifestação musical que utiliza versos ritmados,
+                    interpretação vocal e, frequentemente, batidas
+                    instrumentais.
+                  </p>
+                </article>
+
+                <article>
+                  <span>IMPROVISAÇÃO</span>
+                  <h3>Batalha de rimas</h3>
+                  <p>
+                    Disputa artística que frequentemente envolve improvisação,
+                    criatividade verbal e respostas entre participantes.
+                  </p>
+                </article>
+              </div>
+
+              <p>
+                Essas características não são fronteiras absolutas. Artistas
+                podem transitar entre diferentes linguagens e combinar suas
+                influências criativas.
+              </p>
+            </section>
+
+            <!-- CONSTRUÇÃO POÉTICA -->
+
+            <section id="poesia">
+              <span class="slam-capitulo">CAPÍTULO 07</span>
+
+              <h2>Como se constrói uma poesia de Slam?</h2>
+
+              <p>
+                A criação de um poema começa com uma ideia, um sentimento, uma
+                observação ou uma experiência que o autor deseja compartilhar.
+              </p>
+
+              <div class="slam-regras">
+                <article>
+                  <h3>Ritmo</h3>
+                  <p>
+                    A organização dos sons, palavras e pausas durante a
+                    apresentação.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Metáfora</h3>
+                  <p>
+                    O uso de imagens e sentidos figurados para expressar ideias.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Repetição</h3>
+                  <p>Repetir palavras ou versos para reforçar uma mensagem.</p>
+                </article>
+
+                <article>
+                  <h3>Entonação</h3>
+                  <p>
+                    Variar a intensidade e a expressão da voz para transmitir
+                    sentimentos.
+                  </p>
+                </article>
+              </div>
+
+              <div class="slam-poema">
+                <span>EXEMPLO POÉTICO AUTORAL</span>
+
+                <h3>Minha voz</h3>
+
+                <p>
+                  Minha voz não cabe no silêncio,<br />
+                  nem meus sonhos numa gaveta.<br />
+                  Cada palavra que eu escrevo<br />
+                  pode abrir uma porta secreta.
+                </p>
+
+                <p>
+                  Se o mundo não escuta minha história,<br />
+                  eu faço da palavra um caminho.<br />
+                  Porque quando uma voz encontra outra,<br />
+                  ninguém precisa falar sozinho.
+                </p>
+
+                <small>
+                  Poema original criado para fins educativos no Conscientização
+                  Geral.
+                </small>
+              </div>
+
+              <p>
+                Nesse exemplo, a voz representa a expressão pessoal. A porta e o
+                caminho funcionam como metáforas de oportunidades e
+                possibilidades de comunicação.
+              </p>
+            </section>
+
+            <!-- ESCOLA -->
+
+            <section id="escola">
+              <span class="slam-capitulo">CAPÍTULO 08</span>
+
+              <h2>O Slam como ferramenta de educação</h2>
+
+              <p>
+                No ambiente escolar, a poesia falada pode ser utilizada em
+                atividades de Língua Portuguesa, Literatura, Artes, História e
+                Ciências Humanas.
+              </p>
+
+              <p>
+                Sua prática pode estimular a escrita criativa, a interpretação
+                de textos, a argumentação, a expressão oral e a reflexão sobre
+                diferentes realidades.
+              </p>
+
+              <h3>Como organizar um Slam escolar?</h3>
+
+              <ol class="slam-etapas">
+                <li>Apresente o movimento e sua história.</li>
+
+                <li>Convide os estudantes a escrever poemas.</li>
+
+                <li>Defina coletivamente as regras do encontro.</li>
+
+                <li>Organize um espaço acessível para apresentações.</li>
+
+                <li>Incentive a escuta respeitosa da plateia.</li>
+
+                <li>Promova uma conversa sobre as experiências.</li>
+              </ol>
+
+              <div class="slam-destaque">
+                <strong>Inclusão e acessibilidade</strong>
+                <p>
+                  A participação deve respeitar as necessidades de cada
+                  estudante. É possível adaptar o tempo das apresentações,
+                  utilizar Libras e outras formas de comunicação. Ninguém deve
+                  ser obrigado a expor experiências pessoais.
+                </p>
+              </div>
+            </section>
+
+            <!-- PARTICIPAÇÃO -->
+
+            <section id="participar">
+              <span class="slam-capitulo">CAPÍTULO 09</span>
+
+              <h2>Sua voz também importa</h2>
+
+              <p>
+                Não é necessário ser poeta profissional para começar a escrever.
+                A poesia pode nascer de acontecimentos simples, lembranças,
+                sentimentos e observações do cotidiano.
+              </p>
+
+              <p>
+                Você pode conhecer o movimento assistindo a apresentações,
+                procurando coletivos culturais ou participando de atividades
+                escolares e comunitárias.
+              </p>
+
+              <p>
+                Experimente escolher um assunto importante para você, escrever
+                alguns versos e descobrir como deseja interpretá-los.
+              </p>
+
+              <div class="slam-reflexao">
+                <span>CONVITE À REFLEXÃO</span>
+
+                <h3>
+                  Se você pudesse compartilhar uma mensagem com o mundo, qual
+                  seria?
+                </h3>
+
+                <p>
+                  Transforme essa ideia em palavras. Sua história também merece
+                  espaço.
+                </p>
+              </div>
+            </section>
+
+            <!-- FONTES -->
+
+            <section id="fontes-slam" class="slam-fonte">
+              <span class="slam-capitulo">CAPÍTULO 10</span>
+
+              <h2>Fontes e referências</h2>
+
+              <p>
+                Consulte estas referências para aprofundar seus conhecimentos
+                sobre a poesia falada.
+              </p>
+
+              <div class="slam-biblioteca">
+                <a
+                  href="https://www.poetryfoundation.org/poets/marc-kelly-smith"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>POETRY FOUNDATION</span>
+                  <strong>Marc Kelly Smith</strong>
+                  <p>Biografia do fundador do movimento Poetry Slam.</p>
+                </a>
+
+                <a
+                  href="https://gerflint.fr/Base/Bresil9/estrela.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>SYNERGIES BRÉSIL · 2011</span>
+                  <strong>
+                    Um microfone na mão e uma ideia na cabeça — o poetry slam
+                    entra em cena
+                  </strong>
+                  <p>
+                    Artigo de Roberta Estrela D’Alva sobre a trajetória do
+                    movimento.
+                  </p>
+                </a>
+
+                <a
+                  href="https://www.scielo.br/j/elbc/a/4tDyMX8Dtz7qnBBCTP7RsQb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>SCIELO · ARTIGO ACADÊMICO</span>
+                  <strong>
+                    Slam Resistência: poesia, cidadania e insurgência
+                  </strong>
+                  <p>Pesquisa sobre poesia falada e participação social.</p>
+                </a>
+
+                <a
+                  href="https://revistas.ufrj.br/index.php/tm/article/view/52606"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>UFRJ · REVISTA ACADÊMICA</span>
+                  <strong>Vozes em Levante</strong>
+                  <p>
+                    Estudo sobre a voz, a performance poética e os espaços
+                    socioculturais do Slam.
+                  </p>
+                </a>
+              </div>
+            </section>
+
+            <button class="voltar" type="button" data-voltar>
+              ← Voltar às modalidades
+            </button>
+          </div>
+        </article>
+      </section>
+      <section
+        id="leituraVisual"
+        class="visual"
+        hidden
+        aria-labelledby="visualTitulo"
+      >
+        <p class="visual-etiqueta">CULTURA · LEITURA VISUAL</p>
+        <h2 id="visualTitulo">Descubra o Slam em imagens</h2>
+        <p>
+          Avance pelas cenas no seu ritmo. Você pode ouvir a explicação quando
+          quiser.
+        </p>
+        <div class="visual-progresso">
+          <span id="visualContador">Cena 1 de 5</span>
+          <div class="visual-trilho">
+            <div id="visualBarra" class="visual-barra"></div>
+          </div>
+        </div>
+        <article class="visual-cena">
+          <div id="visualArte" class="visual-arte" aria-hidden="true"></div>
+          <div class="visual-texto">
+            <h3 id="visualCenaTitulo"></h3>
+            <p id="visualCenaTexto"></p>
+          </div>
+        </article>
+        <div class="visual-audio">
+          <button id="ouvirCena" type="button">🔊 Ouvir cena</button
+          ><button id="pararCena" type="button">■ Parar áudio</button>
+        </div>
+        <div class="visual-navegacao">
+          <button id="visualAnterior" class="voltar" type="button">
+            ← Anterior</button
+          ><button id="visualProximo" class="acao" type="button">
+            Próxima →
+          </button>
+        </div>
+        <button class="voltar" type="button" data-voltar>
+          ← Voltar às modalidades
+        </button>
+      </section>
+    </main>
+    <footer class="slam-rodape">
+      Conscientização Geral · Conhecimento acessível para todos<br /><a
+        href="../index.html#explorar"
+        >Explorar outros assuntos</a
+      >
+    </footer>
+    <script src="../statics/js/slam.js" defer></script>
+  </body>
+</html>

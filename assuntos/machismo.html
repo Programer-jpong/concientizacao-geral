@@ -1,466 +1,463 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Aprenda sobre o machismo, suas manifestações e seus impactos na sociedade.">
+    <meta
+      name="description"
+      content="Aprenda sobre o machismo, suas manifestações e seus impactos na sociedade."
+    />
 
     <title>Machismo | Conscientização Geral</title>
 
-    <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../statics/css/machismo.css">
-</head>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../statics/css/machismo.css" />
+    <link rel="stylesheet" href="../statics/css/machismo-visual.css" />
+    <link rel="stylesheet" href="../statics/css/acessibilidade.css" />
+  </head>
 
-<body>
-
-    <a href="#conteudo" class="pular-conteudo">
-        Pular para o conteúdo
-    </a>
+  <body>
+    <a href="#conteudo" class="pular-conteudo"> Pular para o conteúdo </a>
 
     <header class="cabecalho-assunto">
+      <nav aria-label="Navegação principal">
+        <a href="../index.html" class="logo-assunto"> Conscientização Geral </a>
 
-        <nav aria-label="Navegação principal">
+        <a href="../index.html#explorar" class="voltar-portal">
+          ← Voltar ao catálogo
+        </a>
+        <div
+          class="acessibilidade"
+          role="group"
+          aria-label="Recursos de acessibilidade"
+        >
+          <button
+            type="button"
+            id="diminuirFonte"
+            aria-label="Diminuir tamanho do texto"
+          >
+            A−
+          </button>
 
-            <a href="../index.html" class="logo-assunto">
-                Conscientização Geral
-            </a>
+          <button
+            type="button"
+            id="aumentarFonte"
+            aria-label="Aumentar tamanho do texto"
+          >
+            A+
+          </button>
 
-            <a href="../index.html#explorar"
-               class="voltar-portal">
-                ← Voltar ao catálogo
-            </a>
+          <button type="button" id="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
 
-        </nav>
+          <button type="button" id="ouvirPagina">🔊 Ouvir conteúdo</button>
 
+          <button type="button" id="pararLeitura">■ Parar leitura</button>
+        </div>
+      </nav>
     </header>
 
     <main id="conteudo">
+      <section class="apresentacao-assunto" aria-labelledby="titulo-assunto">
+        <p class="categoria-assunto">SOCIEDADE</p>
 
-        <section class="apresentacao-assunto"
-                 aria-labelledby="titulo-assunto">
+        <h1 id="titulo-assunto">Machismo: compreender para transformar</h1>
 
-            <p class="categoria-assunto">
-                SOCIEDADE
-            </p>
+        <p class="descricao-assunto">
+          Entenda como o machismo se manifesta, quais são seus impactos e por
+          que precisamos conversar sobre esse tema.
+        </p>
+      </section>
 
-            <h1 id="titulo-assunto">
-                Machismo: compreender para transformar
-            </h1>
+      <section class="introducao-assunto" aria-labelledby="introducao-titulo">
+        <h2 id="introducao-titulo">Por que falar sobre machismo?</h2>
 
-            <p class="descricao-assunto">
-                Entenda como o machismo se manifesta,
-                quais são seus impactos e por que
-                precisamos conversar sobre esse tema.
-            </p>
+        <p>
+          O machismo está relacionado a ideias, atitudes e práticas que
+          sustentam desigualdades entre homens e mulheres. Ele pode aparecer em
+          situações cotidianas, nas relações sociais e nas instituições.
+        </p>
 
-        </section>
+        <p>
+          Compreender essas manifestações é um passo importante para reconhecer
+          preconceitos, questionar comportamentos e promover relações baseadas
+          no respeito.
+        </p>
+      </section>
 
-        <section class="introducao-assunto"
-                 aria-labelledby="introducao-titulo">
+      <section
+        class="modalidades-machismo"
+        aria-labelledby="titulo-modalidades"
+      >
+        <div class="modalidades-cabecalho">
+          <span class="modalidades-etiqueta"> ESCOLHA SEU CAMINHO </span>
 
-            <h2 id="introducao-titulo">
-                Por que falar sobre machismo?
-            </h2>
-
-            <p>
-                O machismo está relacionado a ideias,
-                atitudes e práticas que sustentam
-                desigualdades entre homens e mulheres.
-                Ele pode aparecer em situações cotidianas,
-                nas relações sociais e nas instituições.
-            </p>
-
-            <p>
-                Compreender essas manifestações é um
-                passo importante para reconhecer
-                preconceitos, questionar comportamentos
-                e promover relações baseadas no respeito.
-            </p>
-
-        </section>
-
-<section class="modalidades-machismo"
-         aria-labelledby="titulo-modalidades">
-
-    <div class="modalidades-cabecalho">
-
-        <span class="modalidades-etiqueta">
-            ESCOLHA SEU CAMINHO
-        </span>
-
-        <h2 id="titulo-modalidades">
+          <h2 id="titulo-modalidades">
             Como você deseja explorar este assunto?
-        </h2>
+          </h2>
 
-        <p>
-            Cada pessoa aprende de uma maneira.
-            Escolha a experiência que mais combina com você.
-        </p>
+          <p>
+            Cada pessoa aprende de uma maneira. Escolha a experiência que mais
+            combina com você.
+          </p>
+        </div>
 
-    </div>
+        <div class="modalidades-grid">
+          <!-- CARTÃO 1 -->
 
-    
-<div class="modalidades-grid">
+          <article class="modalidade-card">
+            <span class="modalidade-icone" aria-hidden="true">📖</span>
 
-    <!-- CARTÃO 1 -->
+            <h3>Leitura aprofundada</h3>
 
-    <article class="modalidade-card">
+            <p>
+              Explore conceitos, origens históricas, consequências sociais e
+              pesquisas sobre o machismo.
+            </p>
 
-        <span class="modalidade-icone"
-              aria-hidden="true">📖</span>
+            <button
+              type="button"
+              id="abrirLeituraMachismo"
+              class="botao-modalidade"
+            >
+              Começar leitura
+            </button>
+          </article>
 
-        <h3>Leitura aprofundada</h3>
+          <!-- CARTÃO 2 -->
 
-        <p>
-            Explore conceitos, origens históricas,
-            consequências sociais e pesquisas
-            sobre o machismo.
-        </p>
+          <article class="modalidade-card">
+            <span class="modalidade-icone" aria-hidden="true">🎨</span>
 
-        <button type="button"
-                id="abrirLeituraMachismo"
-                class="botao-modalidade">
-            Começar leitura
-        </button>
+            <h3>Leitura visual</h3>
 
-    </article>
+            <p>
+              Aprenda sobre o machismo por meio de histórias ilustradas,
+              quadrinhos e explicações curtas, de maneira simples e acessível.
+            </p>
+            <button
+              type="button"
+              id="abrirVisualMachismo"
+              class="botao-modalidade"
+            >
+              Começar leitura visual
+            </button>
+          </article>
+        </div>
+      </section>
 
-    <!-- CARTÃO 2 -->
+      <!-- LEITURA COMPLETA SOBRE MACHISMO -->
 
-    <article class="modalidade-card">
+      <section
+        id="leituraAprofundada"
+        class="leitura-machismo"
+        aria-labelledby="titulo-leitura"
+        hidden
+      >
+        <div class="leitura-container">
+          <div class="leitura-topo">
+            <span class="leitura-etiqueta"> SOCIEDADE · LEITURA COMPLETA </span>
 
-        <span class="modalidade-icone"
-              aria-hidden="true">💬</span>
-
-        <h3>Aprendizagem interativa</h3>
-
-        <p>
-            Analise situações do cotidiano,
-            reflita sobre comportamentos e
-            participe de atividades educativas.
-        </p>
-
-        <span class="modalidade-status">
-            Em desenvolvimento
-        </span>
-
-    </article>
-
-</div>
-
-</section>
-
-<!-- LEITURA COMPLETA SOBRE MACHISMO -->
-
-<section id="leituraAprofundada"
-         class="leitura-machismo"
-         aria-labelledby="titulo-leitura"
-         hidden>
-
-    <div class="leitura-container">
-
-        <div class="leitura-topo">
-
-            <span class="leitura-etiqueta">
-                SOCIEDADE · LEITURA COMPLETA
-            </span>
-
-            <h2 id="titulo-leitura">
-                Compreendendo o machismo
-            </h2>
+            <h2 id="titulo-leitura">Compreendendo o machismo</h2>
 
             <p class="leitura-descricao">
-                Explore os conceitos, as origens e
-                as manifestações do machismo na sociedade.
+              Explore os conceitos, as origens e as manifestações do machismo na
+              sociedade.
             </p>
+          </div>
 
-        </div>
+          <!-- GUIA DE LEITURA -->
 
-        <!-- GUIA DE LEITURA -->
-
-        <nav class="indice-machismo"
-             aria-label="Índice da leitura completa">
-
+          <nav class="indice-machismo" aria-label="Índice da leitura completa">
             <div class="indice-cabecalho">
+              <span class="indice-etiqueta"> GUIA DE LEITURA </span>
 
-                <span class="indice-etiqueta">
-                    GUIA DE LEITURA
-                </span>
+              <h3>Neste conteúdo</h3>
 
-                <h3>Neste conteúdo</h3>
-
-                <p>
-                    Explore os temas no seu próprio ritmo.
-                </p>
-
+              <p>Explore os temas no seu próprio ritmo.</p>
             </div>
 
-           <ol class="indice-lista">
-    <li><a href="#conceito-machismo">O que é machismo?</a></li>
-    <li><a href="#cotidiano-machismo">Machismo no cotidiano</a></li>
-    <li><a href="#dados-machismo">Machismo em números</a></li>
-    <li><a href="#impactos-machismo">Por que falar sobre isso?</a></li>
-    <li><a href="#combate-machismo">Como combater o machismo?</a></li>
-    <li><a href="#apoio-machismo">Onde buscar ajuda?</a></li>
-    <li><a href="#reflexao-machismo">Reflexão final</a></li>
-    <li><a href="#fontes-machismo">Fontes e referências</a></li>
-</ol>
+            <ol class="indice-lista">
+              <li><a href="#conceito-machismo">O que é machismo?</a></li>
+              <li><a href="#cotidiano-machismo">Machismo no cotidiano</a></li>
+              <li><a href="#dados-machismo">Machismo em números</a></li>
+              <li>
+                <a href="#impactos-machismo">Por que falar sobre isso?</a>
+              </li>
+              <li><a href="#combate-machismo">Como combater o machismo?</a></li>
+              <li><a href="#apoio-machismo">Onde buscar ajuda?</a></li>
+              <li><a href="#reflexao-machismo">Reflexão final</a></li>
+              <li><a href="#fontes-machismo">Fontes e referências</a></li>
+            </ol>
+          </nav>
 
-        </nav>
+          <!-- CONTEÚDO EDUCATIVO -->
 
-        <!-- CONTEÚDO EDUCATIVO -->
+          <article class="leitura-artigo">
+            <h3 id="conceito-machismo">O que é machismo?</h3>
 
-        
-<article class="leitura-artigo">
-
-    <h3 id="conceito-machismo">O que é machismo?</h3>
-
-    <p>
-        O machismo é um conjunto de ideias, atitudes e
-        comportamentos que atribuem aos homens uma posição
-        de superioridade em relação às mulheres. Está
-        associado à desigualdade de gênero e pode
-        influenciar a maneira como as pessoas são tratadas
-        na família, na escola, no trabalho e na sociedade.
-    </p>
-
-    <p>
-        Ao longo da história, diferentes sociedades
-        estabeleceram expectativas sobre como homens e
-        mulheres deveriam se comportar. Algumas dessas
-        expectativas limitaram a liberdade feminina,
-        restringindo oportunidades de estudo, trabalho,
-        participação política e autonomia pessoal.
-    </p>
-
-    <p>
-        Embora muitas conquistas tenham ampliado os
-        direitos das mulheres, práticas discriminatórias
-        ainda estão presentes no cotidiano.
-    </p>
-
-    <h3 id="cotidiano-machismo">Machismo no cotidiano</h3>
-
-    <p>
-        O machismo nem sempre aparece de maneira explícita.
-        Também pode estar presente em comentários,
-        brincadeiras, julgamentos e comportamentos que
-        reforçam desigualdades.
-    </p>
-
-    <h4>Na família</h4>
-    <p>
-        Quando as tarefas domésticas e os cuidados com os
-        filhos são considerados responsabilidades exclusivas
-        das mulheres, mesmo quando todos os integrantes
-        da família poderiam compartilhar essas atividades.
-    </p>
-
-    <h4>No trabalho</h4>
-    <p>
-        Quando mulheres enfrentam preconceitos sobre suas
-        capacidades profissionais, dificuldades de promoção
-        ou discriminação salarial por causa do gênero.
-    </p>
-
-    <h4>Na escola</h4>
-    <p>
-        Quando meninas são desencorajadas a participar de
-        atividades científicas, esportivas ou tecnológicas
-        por causa de estereótipos de gênero.
-    </p>
-
-    <h4>Nos relacionamentos</h4>
-    <p>
-        Quando uma pessoa tenta controlar as roupas,
-        amizades, decisões ou a liberdade de sua parceira.
-        Comportamentos controladores não devem ser
-        confundidos com demonstrações de amor.
-    </p>
-
-    <h3 id="dados-machismo">Machismo em números</h3>
-
-    <p>
-        Indicadores nacionais ajudam a compreender a
-        dimensão da violência contra mulheres e das
-        desigualdades de gênero no Brasil.
-    </p>
-
-    <div class="machismo-estatisticas">
-
-        <div class="machismo-dado">
-            <strong>1.571</strong>
-            <h4>Feminicídios em 2025</h4>
             <p>
-                Mulheres vítimas de feminicídio no Brasil,
-                aproximadamente 4,3 por dia.
+              O machismo é um conjunto de ideias, atitudes e comportamentos que
+              atribuem aos homens uma posição de superioridade em relação às
+              mulheres. Está associado à desigualdade de gênero e pode
+              influenciar a maneira como as pessoas são tratadas na família, na
+              escola, no trabalho e na sociedade.
             </p>
-            <small>Fonte: FBSP, 20º Anuário, 2026.</small>
-        </div>
 
-        <div class="machismo-dado">
-            <strong>4.189</strong>
-            <h4>Tentativas de feminicídio em 2025</h4>
             <p>
-                Mulheres sobreviventes de tentativas
-                registradas, aumento de 5,9% em relação
-                a 2024.
+              Ao longo da história, diferentes sociedades estabeleceram
+              expectativas sobre como homens e mulheres deveriam se comportar.
+              Algumas dessas expectativas limitaram a liberdade feminina,
+              restringindo oportunidades de estudo, trabalho, participação
+              política e autonomia pessoal.
             </p>
-            <small>Fonte: FBSP, 20º Anuário, 2026.</small>
-        </div>
 
-        <div class="machismo-dado">
-            <strong>21,3%</strong>
-            <h4>Desigualdade de remuneração</h4>
             <p>
-                Diferença média de remuneração entre
-                mulheres e homens nas empresas privadas
-                analisadas com 100 ou mais empregados.
+              Embora muitas conquistas tenham ampliado os direitos das mulheres,
+              práticas discriminatórias ainda estão presentes no cotidiano.
             </p>
-            <small>Fonte: MTE, 5º Relatório, 2026.</small>
-        </div>
 
-    </div>
+            <h3 id="cotidiano-machismo">Machismo no cotidiano</h3>
 
-    <p>
-        Os indicadores possuem metodologias e períodos de
-        referência próprios. Eles não significam que todos
-        os episódios tenham uma única causa, mas ajudam
-        a compreender a extensão da violência de gênero
-        e das desigualdades existentes.
-    </p>
+            <p>
+              O machismo nem sempre aparece de maneira explícita. Também pode
+              estar presente em comentários, brincadeiras, julgamentos e
+              comportamentos que reforçam desigualdades.
+            </p>
 
-    <h3 id="impactos-machismo">Por que falar sobre isso?</h3>
+            <h4>Na família</h4>
+            <p>
+              Quando as tarefas domésticas e os cuidados com os filhos são
+              considerados responsabilidades exclusivas das mulheres, mesmo
+              quando todos os integrantes da família poderiam compartilhar essas
+              atividades.
+            </p>
 
-    <p>
-        A desigualdade de gênero pode afetar a segurança
-        das mulheres, sua independência financeira,
-        suas relações pessoais e sua participação nas
-        decisões da sociedade.
-    </p>
+            <h4>No trabalho</h4>
+            <p>
+              Quando mulheres enfrentam preconceitos sobre suas capacidades
+              profissionais, dificuldades de promoção ou discriminação salarial
+              por causa do gênero.
+            </p>
 
-    <p>
-        Promover a igualdade não significa colocar mulheres
-        acima dos homens. Significa reconhecer que todas
-        as pessoas devem ter seus direitos respeitados e
-        oportunidades justas, independentemente do gênero.
-    </p>
+            <h4>Na escola</h4>
+            <p>
+              Quando meninas são desencorajadas a participar de atividades
+              científicas, esportivas ou tecnológicas por causa de estereótipos
+              de gênero.
+            </p>
 
-    <h3 id="combate-machismo">Como combater o machismo?</h3>
+            <h4>Nos relacionamentos</h4>
+            <p>
+              Quando uma pessoa tenta controlar as roupas, amizades, decisões ou
+              a liberdade de sua parceira. Comportamentos controladores não
+              devem ser confundidos com demonstrações de amor.
+            </p>
 
-    <p>
-        O enfrentamento do machismo começa pela educação
-        e pela reflexão sobre comportamentos cotidianos.
-        Compartilhar responsabilidades domésticas,
-        respeitar decisões individuais, questionar
-        comentários discriminatórios e incentivar
-        oportunidades iguais são atitudes importantes.
-    </p>
+            <h3 id="dados-machismo">Machismo em números</h3>
 
-    <p>
-        Escolas, famílias, empresas e instituições públicas
-        também desempenham um papel fundamental na
-        prevenção da violência, no combate à discriminação
-        e na proteção dos direitos.
-    </p>
+            <p>
+              Indicadores nacionais ajudam a compreender a dimensão da violência
+              contra mulheres e das desigualdades de gênero no Brasil.
+            </p>
 
-    <h3 id="apoio-machismo">Onde buscar ajuda?</h3>
+            <div class="machismo-estatisticas">
+              <div class="machismo-dado">
+                <strong>1.571</strong>
+                <h4>Feminicídios em 2025</h4>
+                <p>
+                  Mulheres vítimas de feminicídio no Brasil, aproximadamente 4,3
+                  por dia.
+                </p>
+                <small>Fonte: FBSP, 20º Anuário, 2026.</small>
+              </div>
 
-    <p>
-        Pessoas que vivenciam ou presenciam situações de
-        violência contra mulheres podem procurar serviços
-        de proteção e orientação.
-    </p>
+              <div class="machismo-dado">
+                <strong>4.189</strong>
+                <h4>Tentativas de feminicídio em 2025</h4>
+                <p>
+                  Mulheres sobreviventes de tentativas registradas, aumento de
+                  5,9% em relação a 2024.
+                </p>
+                <small>Fonte: FBSP, 20º Anuário, 2026.</small>
+              </div>
 
-    <p>
-        <strong>Ligue 180:</strong> Central de Atendimento
-        à Mulher, que oferece informações, orientações
-        e encaminhamento de denúncias.
-    </p>
+              <div class="machismo-dado">
+                <strong>21,3%</strong>
+                <h4>Desigualdade de remuneração</h4>
+                <p>
+                  Diferença média de remuneração entre mulheres e homens nas
+                  empresas privadas analisadas com 100 ou mais empregados.
+                </p>
+                <small>Fonte: MTE, 5º Relatório, 2026.</small>
+              </div>
+            </div>
 
-    <p>
-        <strong>Polícia Militar — 190:</strong> para
-        situações de emergência que exigem atendimento
-        policial imediato.
-    </p>
+            <p>
+              Os indicadores possuem metodologias e períodos de referência
+              próprios. Eles não significam que todos os episódios tenham uma
+              única causa, mas ajudam a compreender a extensão da violência de
+              gênero e das desigualdades existentes.
+            </p>
 
-    <h3 id="reflexao-machismo">Uma reflexão final</h3>
+            <h3 id="impactos-machismo">Por que falar sobre isso?</h3>
 
-    <p>
-        Combater o machismo não é apenas evitar atitudes
-        violentas. É reconhecer preconceitos, questionar
-        desigualdades e contribuir para uma sociedade em
-        que mulheres possam estudar, trabalhar, participar
-        e fazer suas escolhas com liberdade e segurança.
-    </p>
+            <p>
+              A desigualdade de gênero pode afetar a segurança das mulheres, sua
+              independência financeira, suas relações pessoais e sua
+              participação nas decisões da sociedade.
+            </p>
 
-    <p>
-        A conscientização é um passo importante para
-        transformar comportamentos e construir relações
-        baseadas no respeito.
-    </p>
+            <p>
+              Promover a igualdade não significa colocar mulheres acima dos
+              homens. Significa reconhecer que todas as pessoas devem ter seus
+              direitos respeitados e oportunidades justas, independentemente do
+              gênero.
+            </p>
 
-    <h3 id="fontes-machismo">Fontes e referências</h3>
+            <h3 id="combate-machismo">Como combater o machismo?</h3>
 
-    <p>
-        Os dados apresentados foram reunidos a partir
-        de publicações de instituições brasileiras
-        de pesquisa e órgãos públicos.
-    </p>
+            <p>
+              O enfrentamento do machismo começa pela educação e pela reflexão
+              sobre comportamentos cotidianos. Compartilhar responsabilidades
+              domésticas, respeitar decisões individuais, questionar comentários
+              discriminatórios e incentivar oportunidades iguais são atitudes
+              importantes.
+            </p>
 
-    <ul class="machismo-fontes">
-        <li>
-            <a href="https://publicacoes.forumseguranca.org.br/handle/fbsp/305"
-               target="_blank" rel="noopener noreferrer">
-                Fórum Brasileiro de Segurança Pública —
-                20º Anuário, 2026
-            </a>
-        </li>
+            <p>
+              Escolas, famílias, empresas e instituições públicas também
+              desempenham um papel fundamental na prevenção da violência, no
+              combate à discriminação e na proteção dos direitos.
+            </p>
 
-        <li>
-            <a href="https://www.gov.br/mulheres/pt-br/acesso-a-informacao/acoes-e-programas/plano-nacional-de-igualdade-salarial-e-laboral/relatorio-de-transparencia-salarial"
-               target="_blank" rel="noopener noreferrer">
-                Ministério das Mulheres —
-                Relatórios de Transparência Salarial
-            </a>
-        </li>
-    </ul>
+            <h3 id="apoio-machismo">Onde buscar ajuda?</h3>
 
-    <p>
-        <small>
-            Conteúdo educativo em desenvolvimento.
-            Os dados estatísticos referem-se aos períodos
-            indicados em cada levantamento.
-        </small>
-    </p>
+            <p>
+              Pessoas que vivenciam ou presenciam situações de violência contra
+              mulheres podem procurar serviços de proteção e orientação.
+            </p>
 
-</article>
+            <p>
+              <strong>Ligue 180:</strong> Central de Atendimento à Mulher, que
+              oferece informações, orientações e encaminhamento de denúncias.
+            </p>
 
+            <p>
+              <strong>Polícia Militar — 190:</strong> para situações de
+              emergência que exigem atendimento policial imediato.
+            </p>
 
-        <a href="#titulo-modalidades"
-           class="voltar-modalidades">
+            <h3 id="reflexao-machismo">Uma reflexão final</h3>
+
+            <p>
+              Combater o machismo não é apenas evitar atitudes violentas. É
+              reconhecer preconceitos, questionar desigualdades e contribuir
+              para uma sociedade em que mulheres possam estudar, trabalhar,
+              participar e fazer suas escolhas com liberdade e segurança.
+            </p>
+
+            <p>
+              A conscientização é um passo importante para transformar
+              comportamentos e construir relações baseadas no respeito.
+            </p>
+
+            <h3 id="fontes-machismo">Fontes e referências</h3>
+
+            <p>
+              Os dados apresentados foram reunidos a partir de publicações de
+              instituições brasileiras de pesquisa e órgãos públicos.
+            </p>
+
+            <ul class="machismo-fontes">
+              <li>
+                <a
+                  href="https://publicacoes.forumseguranca.org.br/handle/fbsp/305"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fórum Brasileiro de Segurança Pública — 20º Anuário, 2026
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.gov.br/mulheres/pt-br/acesso-a-informacao/acoes-e-programas/plano-nacional-de-igualdade-salarial-e-laboral/relatorio-de-transparencia-salarial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ministério das Mulheres — Relatórios de Transparência Salarial
+                </a>
+              </li>
+            </ul>
+
+            <p>
+              <small>
+                Conteúdo educativo em desenvolvimento. Os dados estatísticos
+                referem-se aos períodos indicados em cada levantamento.
+              </small>
+            </p>
+          </article>
+
+          <a href="#titulo-modalidades" class="voltar-modalidades">
             ← Voltar às modalidades
-        </a>
+          </a>
+        </div>
+      </section>
 
-    </div>
-
-</section>
-
+      <section
+        id="leituraVisualMachismo"
+        class="visual-machismo"
+        aria-labelledby="visualTitulo"
+        hidden
+      >
+        <div class="visual-container">
+          <span class="visual-etiqueta">SOCIEDADE · LEITURA VISUAL</span>
+          <h2 id="visualTitulo">Histórias para ver e entender</h2>
+          <p class="visual-introducao">
+            Cinco histórias curtas sobre respeito e igualdade. Veja os desenhos,
+            leia poucas palavras ou ouça a história.
+          </p>
+          <nav
+            class="visual-menu"
+            aria-label="Escolha uma história"
+            id="visualMenu"
+          ></nav>
+          <div class="visual-painel" id="visualPainel" aria-live="off">
+            <div class="visual-progresso" id="visualProgresso"></div>
+            <h3 id="visualHistoriaTitulo"></h3>
+            <div class="visual-quadro" id="visualQuadro">
+              <div class="visual-cenario" id="visualCenario" role="img"></div>
+              <div class="visual-fala" id="visualFala"></div>
+              <p class="visual-legenda" id="visualLegenda"></p>
+            </div>
+            <div class="visual-controles">
+              <button type="button" id="visualAnterior">← Voltar cena</button>
+              <button type="button" id="visualOuvir">🔊 Ouvir cena</button>
+              <button type="button" id="visualParar">■ Parar áudio</button>
+              <button type="button" id="visualProximo">Próxima cena →</button>
+            </div>
+            <p class="visual-ajuda">
+              Use os botões para avançar no seu ritmo. O áudio é opcional.
+            </p>
+          </div>
+          <button
+            type="button"
+            id="visualVoltarModalidades"
+            class="visual-retornar"
+          >
+            ← Voltar às modalidades
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="rodape-assunto">
-
-        <p>
-            Conscientização Geral —
-            Conhecimento para transformar.
-        </p>
-
+      <p>Conscientização Geral — Conhecimento para transformar.</p>
     </footer>
-<script src="../statics/js/machismo.js" defer></script>
-</body>
+    <script src="../statics/js/machismo.js" defer></script>
+    <script src="../statics/js/acessibilidade.js" defer></script>
+  </body>
 </html>
